@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Cover Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Cover Template for Bootstrap</title>
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="/stylesheets/index.css">
-  </head>
-     <div class="container" id="main-body">
-   <div class="row">
-     <div class=".col-md-4">
-      <button id="rest-sign">Restaurant Sign Up</button>
-      <button id="user-sign">User Sign Up</button>
-      <button>User Sign In</button>
-      <button>Restaurant Sign In</button>
-     </div>
-     <div class=".col-md-4">
-       <img class="logo img-fluid" src="/images/NARKAL_LOGO_SMALL.png">
-       <h4 class="main__h4" id="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
-       <nav class="nav nav-masthead justify-content-center">
-         <a class="nav-link active" href="#">Home</a>
-         <a class="nav-link" href="#">Discussion</a>
-         <a class="nav-link" href="#">Narkal In Your Neighborhood</a>
-       </nav>
-     </div>
-     <div class=".col-md-4">
-       <section class="map-container">
-      <div id="map"></div>
-      <img id="map-marker" src="/images/narkle_marker_small.png" />
-    </section>
-     </div>
-   </div>
- </div>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+  <div class="container" id="main-body">
+    <div class="row">
+      <div class=".col-md-12">
+        <img class="logo img-fluid" src="/images/NARKAL_LOGO_SMALL.png">
+        <h4 class="main__h4" id="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">Discussion</a>
+          <a class="nav-link" href="#">Narkal In Your Neighborhood</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="map-nav">
+    <div class="row">
+      <div class=".col-md-4">
+        <button id="rest-sign">Restaurant Sign Up</button>
+        <button id="user-sign">User Sign Up</button>
+        <button>User Sign In</button>
+        <button>Restaurant Sign In</button>
+      </div>
+      <div class=".col-md-4">
+        <section class="map-container">
+          <div id="map"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
           <img class="masthead-brand nav-logo" src="/images/NARKAL_LOGO_SMALL.png" >
@@ -65,65 +71,76 @@
       <section class="map-container">
         <div id="map"></div>
         <!-- <img id="map-marker" src="/images/narkle_marker.png" /> -->
-      <!-- </section>
+<!-- </section>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
       </footer>
-    </div> --> -->
+    </div> -->-->
 
 
-    <!-- Bootstrap core JavaScript
+<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSt9xzoEQLQCHhIxf7ITb7XuxyUaDyAo&callback=initMap" async defer></script>
-    <script>
-    var map;
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSt9xzoEQLQCHhIxf7ITb7XuxyUaDyAo&callback=initMap" async defer></script>
+<script>
+  var map;
 
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-          lat: -34.397,
-          lng: 150.644
-        },
-        zoom: 10
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {
+        lat: -34.397,
+        lng: 150.644
+      },
+      zoom: 10
+    });
+    infoWindow = new google.maps.InfoWindow;
+
+    var image = '/images/narkle_marker_small.png';
+    var narkal_marker = new google.maps.Marker({
+      position: {
+        lat: 40.016,
+        lng: -105.282
+      },
+      map: map,
+      icon: image
+    });
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        infoWindow.setPosition(pos);
+        infoWindow.setContent("You are here");
+        infoWindow.open(map);
+        map.setCenter(pos);
+      }, function() {
+        handleLocationError(true, infoWindow, map.getCenter());
       });
-      infoWindow = new google.maps.InfoWindow;
-
-      // Try HTML5 geolocation.
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-          var pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-          };
-
-          infoWindow.setPosition(pos);
-          infoWindow.setContent("You are here");
-          infoWindow.open(map);
-          map.setCenter(pos);
-        }, function() {
-          handleLocationError(true, infoWindow, map.getCenter());
-        });
-      } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
-      }
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
     }
+  }
 
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-      infoWindow.setPosition(pos);
-      infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
-      infoWindow.open(map);
-    }
-  </script>
+  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+      'Error: The Geolocation service failed.' :
+      'Error: Your browser doesn\'t support geolocation.');
+    infoWindow.open(map);
+  }
+</script>
 
-  </body>
+</body>
+
 </html>
