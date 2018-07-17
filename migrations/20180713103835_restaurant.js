@@ -15,6 +15,8 @@ exports.up = function(knex, Promise) {
       table.varchar('facebook', 255).notNullable().defaultTo('');
       table.varchar('instagram', 255).notNullable().defaultTo('');
       table.varchar('twitter', 255).notNullable().defaultTo('');
+      table.varchar('latitude', 255).notNullable().defaultTo('');
+      table.varchar('longitude', 255).notNullable().defaultTo('');
       table.boolean('expense_1').notNullable().defaultTo(false);
       table.boolean('expense_2').notNullable().defaultTo(false);
       table.boolean('expense_3').notNullable().defaultTo(false);
