@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Cover Template for Bootstrap</title>
+  <title>Narkal</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -18,68 +18,30 @@
 <body>
   <div class="container" id="main-body">
     <div class="row">
-      <div class=".col-md-12">
+      <div class=".col-md-4" id="column-right">
+      </div>
+      <div class=".col-md-4" id="column-center">
         <img class="logo img-fluid" src="/images/NARKAL_LOGO_SMALL.png">
         <h4 class="main__h4" id="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
-        <nav class="nav nav-masthead justify-content-center">
+        <nav class="nav nav-masthead">
           <a class="nav-link active" href="#">Home</a>
           <a class="nav-link" href="#">Discussion</a>
           <a class="nav-link" href="#">Narkal In Your Neighborhood</a>
         </nav>
       </div>
-    </div>
-  </div>
-  <div class="container" id="map-nav">
-    <div class="row">
-      <div class=".col-md-4">
-        <button id="rest-sign">Restaurant Sign Up</button>
-        <button id="user-sign">User Sign Up</button>
-        <button>User Sign In</button>
-        <button>Restaurant Sign In</button>
-      </div>
-      <div class=".col-md-4">
+      <div class=".col-md-4" id="column-left">
+        <button class="main__btn"><a href="./restaurant-signin" class="main__a">Restaurant Sign In</a></button><br>
+        <button class="main__btn"><a href="./restaurant-signup" class="main__a">Restaurant Sign Up</a></button><br>
+        <button class="main__btn"><a href="./user-signin" class="main__a">User Sign In</a></button><br>
+        <button class="main__btn"><a href="./user-signup" class="main__a">User Sign Up</a></button><br>
         <section class="map-container">
           <div id="map"></div>
         </section>
       </div>
     </div>
   </div>
+
 </body>
-<!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <img class="masthead-brand nav-logo" src="/images/NARKAL_LOGO_SMALL.png" >
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main">
-        <div  class="inner cover">
-          <img class="logo img-fluid" src="/images/NARKAL_LOGO_SMALL.png">
-          <h4 class="main__h4" id="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
-      </main>
-      <section class="map-container">
-        <div id="map"></div>
-        <!-- <img id="map-marker" src="/images/narkle_marker.png" /> -->
-<!-- </section>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div> -->-->
-
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
