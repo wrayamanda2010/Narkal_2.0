@@ -16,24 +16,29 @@
 </head>
 
 <body>
-  <div class="container" id="main-body">
+  <div class="container-fluid" id="main-body">
     <div class="row">
-      <div class=".col-md-4" id="column-right">
-      </div>
-      <div class=".col-md-4" id="column-center">
+      <div class=".col-sm-6" id="column-left">
         <img class="logo img-fluid" src="/images/NARKAL_LOGO_SMALL.png">
-        <h4 class="main__h4" id="main__h4">A place to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
+        <h4 class="main__h4" id="main__h4">The premier application to find health conscious and ethically sourced dining out options that fit YOUR lifestyle.</h4>
+        <form>
+          <div class="form-group">
+            <input class="form-control input-lg" id="inputlg" type="text">
+            <label for="inputlg"></label>
+            <button class="main__btn" id="search"><a href="" class="search">Search Narkal</a></button>
+          </div>
+        </form>
         <nav class="nav nav-masthead">
           <a class="nav-link active" href="#">Home</a>
           <a class="nav-link" href="#">Discussion</a>
           <a class="nav-link" href="#">Narkal In Your Neighborhood</a>
         </nav>
       </div>
-      <div class=".col-md-4" id="column-left">
-        <button class="main__btn"><a href="./restaurant-signin" class="main__a">Restaurant Sign In</a></button><br>
-        <button class="main__btn"><a href="./restaurant-signup" class="main__a">Restaurant Sign Up</a></button><br>
-        <button class="main__btn"><a href="./user-signin" class="main__a">User Sign In</a></button><br>
-        <button class="main__btn"><a href="./user-signup" class="main__a">User Sign Up</a></button><br>
+      <div class=".col-sm-6" id="column-right">
+        <button class="main__btn"><a href="./restaurant-signin" class="restaurant">Restaurant Sign In</a></button><br>
+        <button class="main__btn"><a href="./restaurant-signup" class="restaurant">Restaurant Sign Up</a></button><br>
+        <button class="main__btn"><a href="./user-signin" class="user">User Sign In</a></button><br>
+        <button class="main__btn"><a href="./user-signup" class="user">User Sign Up</a></button><br>
         <section class="map-container">
           <div id="map"></div>
         </section>
@@ -49,7 +54,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSt9xzoEQLQCHhIxf7ITb7XuxyUaDyAo&callback=initMap" async defer></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSt9xzoEQLQCHhIxf7ITb7XuxyUaDyAo&callback=initMap"></script>
 <script>
   var map;
 
@@ -66,8 +71,8 @@
     var image = '/images/narkle_marker_small.png';
     var narkal_marker = new google.maps.Marker({
       position: {
-        lat: 40.016,
-        lng: -105.282
+        lat: 40.016580,
+        lng: -105.281701
       },
       map: map,
       icon: image
@@ -80,10 +85,15 @@
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-
-        infoWindow.setPosition(pos);
-        infoWindow.setContent("You are here");
-        infoWindow.open(map);
+        var im = 'http://www.robotwoods.com/dev/misc/bluecircle.png';
+        var userMarker = new google.maps.Marker({
+          position: pos,
+          map: map,
+          icon: im
+        });
+        // infoWindow.setPosition(pos);
+        // infoWindow.setContent("You are here");
+        // infoWindow.open(map);
         map.setCenter(pos);
       }, function() {
         handleLocationError(true, infoWindow, map.getCenter());
