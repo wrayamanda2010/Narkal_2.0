@@ -21,8 +21,6 @@ exports.seed = function(knex, Promise) {
           facebook: 'https://www.facebook.com/The-Wizarding-World-of-Harry-Potter-483912830511/',
           instagram: 'https://www.instagram.com/explore/locations/828759273/the-wizarding-world-of-harry-potter-at-universal-studios-hollywood/?hl=en',
           twitter: 'https://twitter.com/UniversalORL?lang=en',
-          lat: 40.016,
-          lng: -105.282,
           expense_1: false,
           expense_2: true,
           expense_3: false,

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Narkal/Restaurant Sign Up</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/stylesheets/restaurant-info.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="register-container">
+      <p class="info__p">Restaurant Information</p>
+      <form class="basic-info" role="register-form">
+        <article class="basic-info--padding">
+          <label for="basic-info__name">Restaurant Name</label>
+          <input type="text" class="basic-info__name">
+          <label for="basic-info__address_one">Street Address</label>
+          <input type="text" placeholder="101 Rainbow Street" class="basic-info__address_one">
+          <label for="basic-info__address_two">Unit/Apt#</label>
+          <input type="text" placeholder="Apt#/Unit" class="basic-info__address_two"><br>
+          <label for="basic-info__city">City</label>
+          <input type="text" placeholder="Glitterville" class="basic-info__city">
+          <label for="basic-info__state">State</label>
+          <input type="text" placeholder="CO" class="basic-info__state">
+        </article>
+        <article class="basic-info--padding">
+          <label for="basic-info__zipcode">Zipcode</label>
+          <input type="text" placeholder="12345" class="basic-info__zipcode">
+          <label for="basic-info__country">Country</label>
+          <input type="text" placeholder="United States" class="basic-info__country">
+          <label for="basic-info__phone">Phone</label>
+          <input type="text" placeholder="###-###-####" class="basic-info__phone">
+          <label for="basic-info__facebook">Facebook</label>
+          <input type="text" placeholder="Link to Facebook Page" class="basic-info__facebook">
+        </article>
+        <article class="basic-info--padding">
+          <label for="basic-info__twitter">Twitter</label>
+          <input type="text" placeholder="Link to Twitter Page" class="basic-info__twitter">
+          <label for="basic-info__city">Instagram</label>
+          <input type="text" placeholder="Link to Instagram Page" class="basic-info__city">
+          <label for="basic-info__hours">Hours</label>
+          <input type="text" placeholder="10am-10pm" class="basic-info__hours">
+          <label for="basic-info__email">Email</label>
+          <input type="email" placeholder="restaurant@gmail.com" class="basic-info__email">
+        </article>
+      </form>
+      <article class="expense--align">
+        <form role="form">
+          <p class="expense__p">Expense Level</p>
+          <label for="expense__1"><i class="fas fa-dollar-sign"></i></label>
+          <input type="radio" name="expense-level" value="level-one" id="expense__1">
+          <label for="expense__2"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i></label>
+          <input type="radio" name="expense-level" value="level-two" id="expense__2">
+          <label for="expense__3"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i></label>
+          <input type="radio" name="expense-level" value="level-three" id="expense__3">
+          <label for="expense__4"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i></label>
+          <input type="radio" name="expense-level" value="level-four" id="expense__4">
+        </form>
+      </article>
+      <button class="next-btn"><a class="next-btn__a" href="/restaurant-type">Next<i class="fas fa-angle-right"></i></a></button>
+    </section>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</html>
