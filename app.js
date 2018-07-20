@@ -17,6 +17,7 @@ const indexRouter = require('./routes/index');
 // const usersSignUpRouter = require('./routes/users-signup');
 const restaurantSignUpRouter = require('./routes/restaurant-signup');
 const restaurantInfoRouter = require('./routes/restaurant-info');
+const restaurantOptionsRouter = require('./routes/restaurant-options');
 // const restaurantProfileRouter = require('./routes/restaurant-profile');
 // const restaurantSignInRouter = require('./routes/restaurant-signin');
 
@@ -66,7 +67,8 @@ app.use('/', indexRouter);
 // app.use('/rest-login', restlogin);
 // app.use('/signup', usersSignUpRouter);
 app.use('/restaurant-signup', restaurantSignUpRouter);
-app.use('/restaurant-info', restaurantInfoRouter)
+app.use('/restaurant-info', restaurantInfoRouter);
+app.use('/restaurant-options', restaurantOptionsRouter);
 // app.use('/restaurant-profile', restaurantProfileRouter);
 // app.use('/restaurant-signin', restaurantSignInRouter);
 

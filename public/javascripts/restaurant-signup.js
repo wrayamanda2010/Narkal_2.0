@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     $.ajax(options)
       .done(function() {
-        window.location.href = "/restaurant-info/${id}";
+        window.location.href = "/restaurant-info";
       })
       .fail(($xhr) => {
         window.location.href="/"
