@@ -15,20 +15,92 @@
 
 <body>
   <section class="options" id="options">
-    <h1 class="header">Select the Narkons that best describe your restaurant!</h1>
       <form class="form__options" id="form__options" method="post" action="/restaurant-options">
-      <% for(let i = 0; i < info.length; i++){
-        let id = info[i].id;
-        let label = info[i].name;
-        let type = info[i].type;
-      %>
-      <label for="option_<%=id%>"><%=label%></label>
-      <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" />
-      <%}%>
-      <form>
+        <h1 class="header">Select the Narkons that best describe your restaurant!</h1>
+        <section class="specialties sections">
+          <h2>Specialties</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Specialties"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section class="food_allergens sections">
+          <h2>Possible Allergens You Serve</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Food Allergies"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section class="dietary_options sections">
+          <h2>Dietary Options You Serve</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Dietary"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section class="food_type sections">
+          <h2>Type of Cuisine You Serve</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Food Type"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section class="restaurant_type sections">
+          <h2>Service Type You Offer</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Restaurant Type"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section class="culture_convenience sections">
+          <h2>Culture and Convenience of Your Restaurant</h2>
+          <% for(let i = 0; i < info.length; i++){
+            let id = info[i].id;
+            let label = info[i].name;
+            let type = info[i].type;
+
+            if(type === "Culture/Convenience"){
+          %>
+          <label class="checkbox_label" for="option_<%=id%>"><%=label%></label>
+          <input class="checkbox_options" type="checkbox" value="<%=id%>" name="option_<%=id%>" /><br>
+          <%}}%>
+        </section>
+        <section>
+          <input class="submit_btn sections" id="submit_btn" type="submit" value="Submit Registration Form">
+        </section>
+      </form>
   </section>
-      <button class="next-btn"><a class="next-btn__a" href="/restaurant-type">Next<i class="fas fa-angle-right"></i></a></button>
-    </section>
+
   </div>
   <script src="javascripts/restaurant-options.js"></script>
 </body>
