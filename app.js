@@ -12,14 +12,12 @@ const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
-// const userlogin = require('./routes/user-login');
-// const restlogin = require('./routes/rest-login');
 const usersSignUpRouter = require('./routes/user-signup');
 const restaurantSignUpRouter = require('./routes/restaurant-signup');
 const restaurantInfoRouter = require('./routes/restaurant-info');
 const restaurantOptionsRouter = require('./routes/restaurant-options');
 // const restaurantProfileRouter = require('./routes/restaurant-profile');
-// const restaurantSignInRouter = require('./routes/restaurant-signin');
+const SignInRouter = require('./routes/log-in');
 
 
 const app = express();
@@ -63,14 +61,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-// app.use('/user-login', userlogin);
-// app.use('/rest-login', restlogin);
 app.use('/user-signup', usersSignUpRouter);
 app.use('/restaurant-signup', restaurantSignUpRouter);
 app.use('/restaurant-info', restaurantInfoRouter);
 app.use('/restaurant-options', restaurantOptionsRouter);
 // app.use('/restaurant-profile', restaurantProfileRouter);
-// app.use('/restaurant-signin', restaurantSignInRouter);
+app.use('/log-in', SignInRouter);
 
 
 
