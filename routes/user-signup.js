@@ -9,12 +9,12 @@ router.get('/', (req, res, next) => {
     .select('*')
     .then((info) => {
       console.log(info)
-      res.render('restaurant-signup', {
-        title: 'Restaurant Sign Up',
+      res.render('user-signup', {
+        title: 'User Sign Up',
         info
       })
     })
-    .catch((err) => `Restaurant sign in error --> ${err}`)
+    .catch((err) => `User sign in error --> ${err}`)
 })
 
 
