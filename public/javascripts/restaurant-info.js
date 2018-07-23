@@ -6,7 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
     var rest = {}
 
-    const
+    const userId = $('#user_id').val()
     const restName = $('#basic-info__name').val().trim()
     const email = $('#basic-info__email').val().trim()
     const hoursOperation = $('#basic-info__hours').val().trim()
@@ -27,6 +27,7 @@ $(document).ready(function() {
 
 
     rest = {
+      "user_id": user_id,
       "restName": restName,
       "email": email,
       "hours-operation": hoursOperation,

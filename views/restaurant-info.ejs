@@ -19,6 +19,7 @@
       <p class="info__p">Restaurant Information</p>
       <form class="basic-info" role="register-form">
         <article class="basic-info--padding">
+          <input type="hidden" name="user_id" id="user_id" value="<%=user_id%>">
           <label for="basic-info__name">Restaurant Name</label>
           <input type="text" class="basic-info__name" id="basic-info__name" required>
           <label for="basic-info__address_one">Street Address</label>
@@ -64,11 +65,12 @@
           <input type="radio" name="expense-level" value="level-four" id="expense__4">
         </form>
       </article>
-      <input class="login__btn" id="login__btn" type="submit" value="Submit Registration">
+      <button class="next-btn"><a class="next-btn__a" href="/restaurant-options">Next</a></button>
     </section>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="javascripts/restaurant-info.js"></script>
 </body>
 </html>

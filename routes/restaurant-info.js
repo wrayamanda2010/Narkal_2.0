@@ -6,9 +6,10 @@ router.get('/', (req, res, next) => {
   knex('restaurant')
     .select('*')
     .then((info) => {
+      const user_id = info[0].users_id
       res.render('restaurant-info', {
         title: 'Restaurant Details',
-        info,
+        user_id: user_id
       })
     })
     .catch((err) => `No Details --> ${err}`)
@@ -22,7 +23,7 @@ router.post('/', (req, res, next) => {
   //create const w/ cookie/id from user
   knex('restaurant')
     .insert({
-      // id = cookie.id
+        user_id : req.body.user_id,
         restName: req.body.restName,
         email: req.body.email,
         hoursOperation: req.body.hoursOperation,
@@ -46,6 +47,7 @@ router.post('/', (req, res, next) => {
       console.log("rest ", rest)
       const newObj = {
         id: rest[0].id,
+        user_id: rest[0].user_id,
         restName: rest[0].restName,
         email: rest[0].email,
         hoursOperation: rest[0].hoursOperation,

@@ -63,3 +63,19 @@ h1{
 .checkbox_options{
   margin-left: 1rem;
 }
+
+.next-btn {
+  background-color: #9973D6;
+ border-radius: .4rem;
+ font-size: 2rem;
+ margin-left: 86%;
+}
+
+.next-btn:hover {
+  background-color: #ac8dde;
+}
+
+.next-btn__a {
+  text-decoration: none;
+   color: #FFFFFF;
+}

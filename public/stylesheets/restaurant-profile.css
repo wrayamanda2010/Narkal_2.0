@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #440744;
+  background-image: url('/images/glitter-bg-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+
+.header__article {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 4rem;
+}
+
+.profile-img {
+  margin-top: 2rem;
+  width: 15%;
+}
+
+/*Restaurant Description and Social Media Inputs and Btns*/
+.main-content {
+  height: 850px;
+}
+
+.line-break {
+  position: relative;
+  padding: 0 4.5rem 0 4.5rem;
+}
+
+.line-break__hr {
+  border: solid .5px #ADB8CD;
+}
+
+.line-break__btn {
+  position: absolute;
+  top: -1rem;
+  left: 50rem;
+  font-size: 1.4rem;
+  border: 1px solid #ADB8CD;
+  border-radius: 2rem;
+  padding: .3rem .5rem .3rem .5rem;
+  color: #808995;
+}
+
+.article-aside-wrap {
+  display: flex;
+  padding: 3.5rem 0 0 4.5rem;
+}
+
+.main-content-article {
+  width: 66%;
+  height: 705px;
+  background-color: #FFFFFF;
+  margin-right: 4.5rem;
+  border-radius: 1rem;
+}
+
+.restaurant-description__div {
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin-top: 1rem;
+}
+
+.restaurant-description--color {
+  background-color: #440744;
+  color: #FFFFFF;
+}
+
+.main-content__h2 {
+  width: 200px;
+  font-size: 2.3rem;
+}
+
+.main-content__p {
+  font-size: 1.8rem;
+}
+
+.main-content__btn {
+  padding: .8rem;
+  border-radius: 1rem;
+  background-color: #9973D6;
+  color: #FFFFFF;
+}
+
+.fa-pencil-alt {
+  padding-right: .6rem;
+}
+
+#description-target {
+  min-width: 200px;
+}
+
+#main-content__img {
+  padding-left: 7rem;
+}
+
+.main-content__img {
+  width: 16%;
+  border-radius: 50%;
+}
+
+.main-content__btn i {
+  padding-right: .5rem;
+}
+
+.main-content__aside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: .05rem;
+  border-radius: 1rem;
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-linkedin,
+.fa-angle-right
+ {
+  padding-right: .5rem;
+}
+
+.social__btn i {
+  padding-right: 63px;
+}
+
+.facebook {
+  background-color: #4A6AC9;
+}
+
+.twitter {
+  background-color: #00A8F7;
+}
+
+.linkedin {
+  background-color: #007FC3;
+}
+
+.narkons-wrapper {
+  font-size: 1.5rem;
+}
+
+.narkons--align {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.narkons__ul {
+  list-style: none;
+}
+
+.narkons__ul li {
+  padding: .5rem;
+}
+
+.narkons__span {
+  font-size: 2rem;
+}
+
+
+.next-btn {
+  background-color: #9973D6;
+  border-radius: .4rem;
+  font-size: 2rem;
+  margin-left: 5%;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+a:visited {
+    color: white;
+}
