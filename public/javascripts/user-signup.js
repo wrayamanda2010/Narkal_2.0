@@ -39,9 +39,11 @@ $(document).ready(function() {
     $.ajax(options)
       .done(function() {
         window.location.href = "/";
+        alert("Registration Complete!")
       })
       .fail(($xhr) => {
-        window.location.href="/"
+        window.location.href="/user-signup";
+        alert("Error Username already taken or account already registered.")
       })
   })
 })

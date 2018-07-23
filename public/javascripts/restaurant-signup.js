@@ -41,7 +41,8 @@ $(document).ready(function() {
         window.location.href = "/restaurant-info";
       })
       .fail(($xhr) => {
-        window.location.href="/"
+        window.location.href="/restaurant-signup"
+        alert("Error Username already taken or account already registered.")
       })
   })
 })
