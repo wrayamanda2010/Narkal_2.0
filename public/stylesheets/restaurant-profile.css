@@ -16,20 +16,20 @@ body {
   background-repeat: no-repeat;
 }
 
-h1{
-  margin-bottom: 2rem;
-}
-
 .header__article {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-left: 4rem;
+  align-items: center;
 }
 
 .profile-img {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 15%;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 0 4px #a6a6a6;
+  margin-left: 72rem;
 }
 
 /*Restaurant Description and Social Media Inputs and Btns*/
@@ -59,7 +59,7 @@ h1{
 
 .article-aside-wrap {
   display: flex;
-  padding: 3.5rem 0 0 4.5rem;
+  padding: 4.5rem 0 0 4.5rem;
 }
 
 .main-content-article {
@@ -71,10 +71,12 @@ h1{
 }
 
 .restaurant-description__div {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  border-bottom: 1px solid #ADB8CD;
+  background-color: #FFFFFF;
   border-radius: 1rem;
-  padding: .5rem;
-  margin-top: 1rem;
 }
 
 .restaurant-description--color {
@@ -139,7 +141,6 @@ h1{
   font-size: 2rem;
   color: #FFFFFF;
   letter-spacing: .05rem;
-  border-radius: 1rem;
 }
 
 .fa-facebook-square,
@@ -187,17 +188,16 @@ h1{
   font-size: 2rem;
 }
 
-
-.next-btn {
-  background-color: #9973D6;
-  border-radius: .4rem;
-  font-size: 2rem;
-  margin-left: 5%;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: .5rem;
+.comment_box{
+  box-shadow: 2px 0 4px #a6a6a6;
+  padding: 1rem;
+  margin-left: 3rem;
 }
 
-a:visited {
-    color: white;
+p{
+  font-size: 1.5rem;
+}
+
+.narkons{
+
 }
