@@ -23,13 +23,19 @@ body {
 }
 
 .profile-img {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 15%;
+  /* margin-bottom: 1rem; */
+  width: 17%;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 2px 0 4px #a6a6a6;
-  margin-left: 72rem;
+  margin-left: 30rem;
+}
+
+.narkal-img{
+  width: 35%;
+  border-radius: 1rem;
+  margin-left: 35rem;
+  background-color: white;
 }
 
 /*Restaurant Description and Social Media Inputs and Btns*/
@@ -141,6 +147,7 @@ body {
   font-size: 2rem;
   color: #FFFFFF;
   letter-spacing: .05rem;
+  border-radius: 1rem;
 }
 
 .fa-facebook-square,
@@ -196,8 +203,4 @@ body {
 
 p{
   font-size: 1.5rem;
-}
-
-.narkons{
-
 }

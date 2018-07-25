@@ -29,9 +29,41 @@
             </div>
           </form>
           <nav class="nav nav-masthead">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Discussion</a>
-            <a class="nav-link" href="#">Narkal In Your Neighborhood</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Mission Statement</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Who is Narkal?</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Narkal's Goals</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Join Us In This Journey</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">How Narkal Works</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Meet The Narkal Crew</a>
+                </div>
+              </li><br>
+              <a class="nav-link" href="#">Discussion</a><br>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Narkal In Your Neighborhood</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Portland, OR</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Denver, CO</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Las Angeles, CA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Seattle, WA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Chicago, IL</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Honolulu, HI</a>
+                </div>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -75,6 +107,11 @@
       map: map,
       icon: image
     });
+    var contentString = '<a class="text_color" href="/restaurant-profile" >Restaurant Profile Page</a>';
+
+    infoWindow.setPosition(narkal_marker.position);
+    infoWindow.setContent(contentString);
+    infoWindow.open(map);
 
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
@@ -89,9 +126,7 @@
           map: map,
           icon: im
         });
-        // infoWindow.setPosition(pos);
-        // infoWindow.setContent("You are here");
-        // infoWindow.open(map);
+
         map.setCenter(pos);
       }, function() {
         handleLocationError(true, infoWindow, map.getCenter());

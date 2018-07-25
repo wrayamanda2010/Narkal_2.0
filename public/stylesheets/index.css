@@ -78,7 +78,7 @@ body {
     float: left;
   }
   .nav-masthead {
-    float: right;
+    float: left;
   }
 }
 
@@ -91,7 +91,7 @@ body {
 
 .nav-masthead{
   padding-right: 10rem;
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 
 .logo{
@@ -168,4 +168,12 @@ img {
 .under_logo{
   position: relative;
   margin-top: 60%;
+}
+
+.text_color{
+  color: #440744;
+}
+
+.nav-link{
+  padding: 2rem!important;
 }
