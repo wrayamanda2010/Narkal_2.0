@@ -2,6 +2,8 @@
 
 A website and future phone app that allows restaurants to highlight special amenities they offer. These amenities can range from locally sourced ingredients and ecofriendly practices. The site also offers them the ability to highlight menu offerings such as completely vegan, vegetarian, or gluten free. If they offer a wide variety of options these are also available to be highlighted on their profile page.
 
+All styles and designs were provided and approved by the project manager. 
+
 ![narkalhome](https://user-images.githubusercontent.com/30608422/41165729-9f130b7e-6afb-11e8-9220-5f2b42b66f00.png)
 
   Home landing page complete with geolocation and custom narkal marker
