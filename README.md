@@ -1,5 +1,4 @@
 # Narkal_2.0
-Second try in creating the Narkal website for Alison Morgan
 
 A website and future phone app that allows restaurants to highlight special amenities they offer. These amenities can range from locally sourced ingredients and ecofriendly practices. The site also offers them the ability to highlight menu offerings such as completely vegan, vegetarian, or gluten free. If they offer a wide variety of options these are also available to be highlighted on their profile page.
 
